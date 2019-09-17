@@ -1,0 +1,13 @@
+class Student1{
+    static String  name;
+	public void speak(){
+		System.out.println(name);
+	}
+}
+public class Example12{
+	public static void main(String[] args){
+		Student1 stu1=new Student1();
+		stu1.name="传播知客";
+		stu1.speak();
+	}
+}
