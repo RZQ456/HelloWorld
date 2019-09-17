@@ -1,0 +1,14 @@
+class Outer{
+	static class Inner{
+                static int num=10;
+		void show(){
+			System.out.println("NUM="+ num);
+		}
+	}
+}
+public class Example16{
+	public static void main(String[] args){
+		Outer.Inner inner=new Outer. Inner();
+		inner.show();
+	}
+}
