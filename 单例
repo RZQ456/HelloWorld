@@ -1,0 +1,14 @@
+class Single{
+	private static Single INSTANCE = new Single();
+    private Single(){}
+		public static Single getInstance(){
+			return INSTANCE;
+	}
+}
+class Example15{
+	public static void main(String[] args){
+		Single S1= Single.getInstance();
+		Single S2=Single.getInstance();
+		System.out.println(S1==S2);
+	}
+} 
