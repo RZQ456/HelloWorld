@@ -1,0 +1,34 @@
+abstract class Animal{  
+    public Animal(){
+	}
+}  
+ class Doger extends Animal{
+	public Doger(){
+		System.out.println("汪汪。。。");
+	}
+}
+ class Cater extends Animal{
+	public Cater(){
+		System.out.println("喵喵。。。");
+	}
+}
+ class Factory{
+	public Animal creatAnimal(char name){
+		switch(name){
+			case 'd':
+			return new Doger();
+			case 'c':
+			return new Cater();
+			default:
+			break;
+		}
+		return null;
+	}
+}
+public class Example03{
+	public static void main(String[] args){
+		Factory factory=new Factory();
+		Animal Doger =factory.creatAnimal('d');
+		Animal Cater = factory.creatAnimal('c');
+	}
+}
