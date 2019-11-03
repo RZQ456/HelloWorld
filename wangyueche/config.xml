@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config>
+
+        <className>AudiFactory</className>
+        <className>BmwFactory</className>
+        <className>BenzFactory</className>
+
+</config>
